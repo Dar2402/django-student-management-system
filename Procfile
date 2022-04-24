@@ -1,1 +1,1 @@
-web gunicorn django-student-management-system.wsgi:application --log-file -
+web: waitress-serve --port=$PORT student_management_system.wsgi:application
